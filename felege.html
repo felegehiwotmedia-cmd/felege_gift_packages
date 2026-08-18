@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="am" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ፈለገ Gift Package | ልዩ የስጦታ ፖኬጅ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', 'Noto Sans Ethiopic', sans-serif;
+        }
+        .ethiopic {
+            font-family: 'Noto Sans Ethiopic', sans-serif;
+        }
+
+        /* Custom smooth entrance animations */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes floatSlow {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(2deg); }
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% { box-shadow: 0 0 15px rgba(16, 185, 129, 0.2); }
+            50% { box-shadow: 0 0 25px rgba(16, 185, 129, 0.4); }
+        }
+
+        .animate-fade-down {
+            animation: fadeInDown 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        .animate-fade-up {
+            animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        .animate-float {
+            animation: floatSlow 4s ease-in-out infinite;
+        }
+
+        .animate-pulse-glow {
+            animation: pulseGlow 3s ease-in-out infinite;
+        }
+
+        /* Modal scale transition */
+        #booking-modal {
+            transition: opacity 0.3s ease, backdrop-filter 0.3s ease;
+        }
+        #booking-modal > div {
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
+        }
+        #booking-modal.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+        #booking-modal.hidden > div {
+            transform: scale(0.95) translateY(20px);
+        }
+    </style>
+</head>
+<body class="bg-emerald-50/30 text-slate-800 antialiased min-h-screen flex flex-col justify-between selection:bg-emerald-500 selection:text-white">
+
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-emerald-100/80 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3 group cursor-pointer">
+                <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-gradient-to-tr from-emerald-600 to-teal-400 flex items-center justify-center text-white shadow-lg shadow-emerald-500/25 text-xl sm:text-2xl transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                    🎁
+                </div>
+                <div>
+                    <h1 class="font-extrabold text-sm sm:text-lg text-slate-900 ethiopic tracking-tight">ፈለገ Gift Package</h1>
+                    <p class="text-[10px] sm:text-xs text-emerald-600 font-medium ethiopic"></p>
+                </div>
+            </div>
+            <div class="flex items-center space-x-2 sm:space-x-3">
+                <a href="https://t.me/felegeh07" target="_blank" class="px-4 py-2 sm:px-5 sm:py-2.5 rounded-xl bg-gradient-to-r from-sky-400 to-sky-500 text-white font-medium text-xs sm:text-sm shadow-md shadow-sky-500/25 hover:shadow-lg hover:shadow-sky-500/40 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 flex items-center gap-1.5 sm:gap-2 ethiopic">
+                    <span class="animate-bounce">📱</span> <span>ቴሌግራም</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <section class="relative py-12 sm:py-20 lg:py-28 overflow-hidden bg-gradient-to-b from-emerald-100/60 via-emerald-50/25 to-transparent">
+            <!-- Decorative background blur elements -->
+            <div class="absolute top-10 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-gradient-to-tr from-emerald-300/20 to-teal-300/20 rounded-full blur-3xl pointer-events-none -z-10 animate-pulse-glow"></div>
+            
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-100/80 border border-emerald-200 text-emerald-800 text-xs sm:text-sm font-semibold mb-6 animate-fade-down ethiopic shadow-sm">
+                    <span class="animate-float inline-block">✨</span> ልዩ የፍቅር እና የደስታ ስጦታዎች ለምትወዳቸው ሰዎች
+                </div>
+                
+                <h2 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight mb-4 sm:mb-6 ethiopic leading-tight animate-fade-up">
+                    ለወዳጅ ዘመድዎ የሚያምሩ <span class="bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">የስጦታ ፖኬጆች</span>
+                </h2>
+                <p class="max-w-2xl mx-auto text-sm sm:text-lg text-slate-600 mb-8 sm:mb-10 ethiopic px-2 animate-fade-up" style="animation-delay: 0.1s;">
+                    መባ የቤተክርስትያን ፖኪጅ፣ የወንድ፣ የሴቶች፣ የአባት፣ የእናት፣ የልጅ ፓኬጆችን በቀላሉ ይምረጡና ባለበት ቦታ እናደርሳለን።
+                </p>
+                <div class="flex flex-wrap justify-center gap-4 animate-fade-up" style="animation-delay: 0.2s;">
+                    <a href="#packages" class="group relative px-8 py-4 rounded-2xl bg-slate-900 text-white font-semibold shadow-xl shadow-slate-900/15 hover:bg-slate-800 hover:-translate-y-1 active:translate-y-0 transition-all duration-300 text-sm sm:text-base ethiopic text-center overflow-hidden">
+                        <span class="relative z-10 flex items-center gap-2 justify-center">
+                            ፖኬጆችን ይመልከቱ 
+                            <svg class="w-4 h-4 transform group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                        </span>
+                        <div class="absolute inset-0 bg-gradient-to-r from-emerald-600 to-teal-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="categories" class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-8 sm:py-12">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-6 sm:mb-8">
+                <div>
+                    <h3 class="text-xl sm:text-2xl font-bold text-slate-900 ethiopic">የስጦታ ምድቦች</h3>
+                </div>
+            </div>
+
+            <div id="category-filters" class="flex flex-wrap gap-2 sm:gap-3 overflow-x-auto pb-3 scrollbar-none">
+                <button onclick="filterCategory('all')" class="cat-btn active px-5 py-2.5 rounded-2xl font-semibold text-xs sm:text-sm transition-all duration-300 bg-emerald-600 text-white shadow-lg shadow-emerald-600/25 hover:-translate-y-0.5 active:translate-y-0 ethiopic whitespace-nowrap">
+                    ሁሉም (All)
+                </button>
+                <button onclick="filterCategory('church')" class="cat-btn px-5 py-2.5 rounded-2xl font-semibold text-xs sm:text-sm transition-all duration-300 bg-white text-slate-600 border border-slate-200/80 hover:border-emerald-400 hover:text-emerald-700 hover:shadow-md hover:-translate-y-0.5 ethiopic whitespace-nowrap">
+                    መባ ቤተክርስትያን
+                </button>
+                <button onclick="filterCategory('womens')" class="cat-btn px-5 py-2.5 rounded-2xl font-semibold text-xs sm:text-sm transition-all duration-300 bg-white text-slate-600 border border-slate-200/80 hover:border-emerald-400 hover:text-emerald-700 hover:shadow-md hover:-translate-y-0.5 ethiopic whitespace-nowrap">
+                    ለሴቶች
+                </button>
+                <button onclick="filterCategory('mens')" class="cat-btn px-5 py-2.5 rounded-2xl font-semibold text-xs sm:text-sm transition-all duration-300 bg-white text-slate-600 border border-slate-200/80 hover:border-emerald-400 hover:text-emerald-700 hover:shadow-md hover:-translate-y-0.5 ethiopic whitespace-nowrap">
+                    ለወንዶች
+                </button>
+                <button onclick="filterCategory('kids')" class="cat-btn px-5 py-2.5 rounded-2xl font-semibold text-xs sm:text-sm transition-all duration-300 bg-white text-slate-600 border border-slate-200/80 hover:border-emerald-400 hover:text-emerald-700 hover:shadow-md hover:-translate-y-0.5 ethiopic whitespace-nowrap">
+                    ለህጻናት
+                </button>
+                <button onclick="filterCategory('fathers')" class="cat-btn px-5 py-2.5 rounded-2xl font-semibold text-xs sm:text-sm transition-all duration-300 bg-white text-slate-600 border border-slate-200/80 hover:border-emerald-400 hover:text-emerald-700 hover:shadow-md hover:-translate-y-0.5 ethiopic whitespace-nowrap">
+                    ለአባቶች
+                </button>
+                <button onclick="filterCategory('mothers')" class="cat-btn px-5 py-2.5 rounded-2xl font-semibold text-xs sm:text-sm transition-all duration-300 bg-white text-slate-600 border border-slate-200/80 hover:border-emerald-400 hover:text-emerald-700 hover:shadow-md hover:-translate-y-0.5 ethiopic whitespace-nowrap">
+                    ለእናቶች
+                </button>
+            </div>
+        </section>
+
+        <section id="packages" class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 pb-16 sm:pb-24">
+            <div class="flex flex-col sm:flex-row items-center justify-between mb-6 sm:mb-8 gap-4">
+                <div>
+                    <h3 class="text-xl sm:text-2xl font-bold text-slate-900 ethiopic">የተዘጋጁ ስጦታ ፓኬጆች</h3>
+                </div>
+            </div>
+
+            <div id="packages-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+                <!-- Dynamically populated via JS with animation classes -->
+            </div>
+        </section>
+
+        <!-- Booking Modal with glassmorphism and slide-up animation -->
+        <div id="booking-modal" class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-md flex items-end sm:items-center justify-center p-0 sm:p-4 overflow-y-auto">
+            <div class="bg-white rounded-t-[2.5rem] sm:rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative my-0 sm:my-8 max-h-[92vh] overflow-y-auto transform transition-all duration-300 border border-slate-100">
+                <button onclick="closeModal()" class="absolute top-5 right-5 text-slate-400 hover:text-slate-700 bg-slate-100 hover:bg-slate-200 p-2.5 rounded-full transition-all duration-200">
+                    ✕
+                </button>
+                <div class="mb-6 pr-8">
+                    <span id="modal-category" class="text-xs font-bold px-3 py-1.5 rounded-full bg-emerald-100 text-emerald-800 ethiopic inline-block shadow-sm"></span>
+                    <h3 id="modal-title" class="text-lg sm:text-xl font-bold text-slate-900 mt-2.5 ethiopic"></h3>
+                    <p id="modal-price" class="text-lg sm:text-xl font-extrabold text-emerald-600 mt-1"></p>
+                </div>
+                
+                <form id="order-form" onsubmit="submitBooking(event)" class="space-y-4">
+                    <input type="hidden" id="selected-package-id">
+                    <div>
+                        <label class="block text-xs sm:text-sm font-semibold text-slate-700 mb-1.5 ethiopic">ሙሉ ስም (Full Name)</label>
+                        <input type="text" id="cust-name" required class="w-full px-4 py-3 rounded-2xl border border-slate-200 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 focus:outline-none text-sm transition-all shadow-sm" placeholder="ስምዎን ያስገቡ">
+                    </div>
+                    <div>
+                        <label class="block text-xs sm:text-sm font-semibold text-slate-700 mb-1.5 ethiopic">ስልክ ቁጥር (Phone Number)</label>
+                        <input type="tel" id="cust-phone" required class="w-full px-4 py-3 rounded-2xl border border-slate-200 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 focus:outline-none text-sm transition-all shadow-sm" placeholder="09xxxxxxxx">
+                    </div>
+                    <div>
+                        <label class="block text-xs sm:text-sm font-semibold text-slate-700 mb-1.5 ethiopic">የማድረሻ አድራሻ (Delivery Address)</label>
+                        <textarea id="cust-address" required rows="2" class="w-full px-4 py-3 rounded-2xl border border-slate-200 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 focus:outline-none text-sm transition-all shadow-sm" placeholder="ሰፈር / የቤት ቁጥር / አካባቢ"></textarea>
+                    </div>
+                    <div>
+                        <label class="block text-xs sm:text-sm font-semibold text-slate-700 mb-1.5 ethiopic">የመላኪያ ቀን (Delivery Date)</label>
+                        <input type="date" id="cust-date" required class="w-full px-4 py-3 rounded-2xl border border-slate-200 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 focus:outline-none text-sm transition-all shadow-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs sm:text-sm font-semibold text-slate-700 mb-1.5 ethiopic">በካርድ ላይ የሚጻፍ መልእክት (Optional Card Message)</label>
+                        <input type="text" id="cust-note" class="w-full px-4 py-3 rounded-2xl border border-slate-200 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 focus:outline-none text-sm transition-all shadow-sm" placeholder="መልካም በዓል / ልደት!...">
+                    </div>
+                    <button type="submit" class="w-full py-4 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-500 text-white font-bold shadow-lg shadow-emerald-600/30 hover:shadow-xl hover:shadow-emerald-600/40 hover:opacity-95 transform hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 ethiopic flex items-center justify-center gap-2 text-sm sm:text-base mt-2">
+                        <span>📲 ትዕዛዙን ወደ ቴሌግራም (@felegeh07) ይላኩ</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white border-t border-slate-100 py-8 text-center text-xs sm:text-sm text-slate-500 ethiopic px-4 shadow-inner">
+        <p>&copy; 2026 ፈለገ Gift Package. All rights reserved. | Developed by <strong class="text-emerald-700">Dagim Dawit</strong></p>
+    </footer>
+
+    <script>
+        const packagesData = [
+            // Church Packages (መባ የቤተክርስትያን ፖኪጅ)
+            { id: 101, category: 'church', categoryName: 'መባ የቤተክርስትያን ፖኪጅ', title: 'የቤተክርስቲያን መባ Package 1', price: '3,800 ብር', items: ['ነጠላ', 'መስቀል', 'ስዕለ አድህኖ'], image: 'https://placehold.co/600x400/f0fdf4/059669?text=Church+Pkg+1' },
+            { id: 102, category: 'church', categoryName: 'መባ የቤተክርስትያን ፖኪጅ', title: 'የቤተክርስቲያን መባ Package 2', price: '5,000 ብር', items: ['መዝገበ ጸሎት', 'ነጠላ', 'ሻማ', 'መስቀል'], image: 'https://placehold.co/600x400/f0fdf4/059669?text=Church+Pkg+2' },
+            { id: 103, category: 'church', categoryName: 'መባ የቤተክርስትያን ፖኪጅ', title: 'የቤተክርስቲያን መባ Package 3', price: '7,000 ብር', items: ['መጽሃፍ ቅዱስ', 'የአገር ልብስ', 'መስቀል'], image: 'https://placehold.co/600x400/f0fdf4/059669?text=Church+Pkg+3' },
+
+            // Women's Packages
+            { id: 1, category: 'womens', categoryName: 'ለሴቶች', title: 'ሴቶች Package 1', price: '2,500 ብር', items: ['Cake', 'Snow spray', 'Postcard', 'Richit', 'Delivery'], image: 'https://placehold.co/600x400/fdf2f8/db2777?text=Womens+Pkg+1' },
+            { id: 2, category: 'womens', categoryName: 'ለሴቶች', title: 'ሴቶች Package 2', price: '3,000 ብር', items: ['Cake', 'Flower', 'Postcard', 'Richit', 'Delivery'], image: 'https://placehold.co/600x400/fdf2f8/db2777?text=Womens+Pkg+2' },
+            { id: 3, category: 'womens', categoryName: 'ለሴቶች', title: 'ሴቶች Package 3', price: '3,500 ብር', items: ['Cake', 'Flower', 'Ashangulit', 'Postcard', 'Richit', 'Delivery'], image: 'https://placehold.co/600x400/fdf2f8/db2777?text=Womens+Pkg+3' },
+            { id: 4, category: 'womens', categoryName: 'ለሴቶች', title: 'ሴቶች Package 4', price: '3,800 ብር', items: ['Cake', 'Flower', 'Shito', 'Postcard', 'Richit', 'Delivery'], image: 'https://placehold.co/600x400/fdf2f8/db2777?text=Womens+Pkg+4' },
+            { id: 5, category: 'womens', categoryName: 'ለሴቶች', title: 'ሴቶች Package 5', price: '3,300 ብር', items: ['Flower', 'Chocolat', 'Post card', 'Richit', 'Delivery'], image: 'https://placehold.co/600x400/fdf2f8/db2777?text=Womens+Pkg+5' },
+            { id: 6, category: 'womens', categoryName: 'ለሴቶች', title: 'ሴቶች Package 6', price: '3,500 ብር', items: ['Flower', 'Chocolat', 'Shito', 'Post card', 'Richit', 'Delivery'], image: 'https://placehold.co/600x400/fdf2f8/db2777?text=Womens+Pkg+6' },
+            { id: 7, category: 'womens', categoryName: 'ለሴቶች', title: 'ሴቶች Package 7', price: '4,100 ብር', items: ['Flower', 'Chocolat', 'Ashangulit', 'Shito', 'Post card', 'Richit', 'Delivery'], image: 'https://placehold.co/600x400/fdf2f8/db2777?text=Womens+Pkg+7' },
+            { id: 8, category: 'womens', categoryName: 'ለሴቶች', title: 'ሴቶች Package 8', price: '5,800 ብር', items: ['Cake', 'Flower', 'Watch', 'Shito', 'Richit', 'Postcard', 'Delivery'], image: 'https://placehold.co/600x400/fdf2f8/db2777?text=Womens+Pkg+8' },
+            { id: 9, category: 'womens', categoryName: 'ለሴቶች', title: 'ሴቶች Package 9', price: '8,300 ብር', items: ['Borsa', 'Ye eji get', 'Cake', 'Loshin', 'Flower', 'Watch', 'Shito', 'Richit', 'Postcard', 'Delivery'], image: 'https://placehold.co/600x400/fdf2f8/db2777?text=Womens+Pkg+9' },
+
+            // Men's Packages
+            { id: 20, category: 'mens', categoryName: 'ለወንዶች', title: 'ወንዶች Package 1', price: '2,500 ብር', items: ['Cake', 'snow spray', 'Postcard', 'Richit', 'Delivery'], image: 'https://placehold.co/600x400/f0fdf4/059669?text=Mens+Pkg+1' },
+            { id: 21, category: 'mens', categoryName: 'ለወንዶች', title: 'ወንዶች Package 2', price: '3,000 ብር', items: ['Cake', 'Flower', 'Richit', 'Post', 'Delivery'], image: 'https://placehold.co/600x400/f0fdf4/059669?text=Mens+Pkg+2' },
+            { id: 22, category: 'mens', categoryName: 'ለወንዶች', title: 'ወንዶች Package 4', price: '4,000 ብር', items: ['Cake', 'Kebeto', 'Shito', 'Wallet', 'Richit', 'Post', 'Delivery'], image: 'https://placehold.co/600x400/f0fdf4/059669?text=Mens+Pkg+4' },
+            { id: 23, category: 'mens', categoryName: 'ለወንዶች', title: 'ወንዶች Package 5', price: '6,500 ብር', items: ['Cake', 'Shemiz', 'Kebeto', 'Shito', 'Post', 'Richit', 'Delivery'], image: 'https://placehold.co/600x400/f0fdf4/059669?text=Mens+Pkg+5' },
+            { id: 24, category: 'mens', categoryName: 'ለወንዶች', title: 'ወንዶች Package 6', price: '9,000 ብር', items: ['Cake', 'Quality Shemiz', 'Kebeto', 'Shito', 'Quality Seat', 'Post', 'Ruchit', 'Delivery'], image: 'https://placehold.co/600x400/f0fdf4/059669?text=Mens+Pkg+6' },
+            { id: 25, category: 'mens', categoryName: 'ለወንዶች', title: 'ወንዶች Package 7', price: '10,000 ብር', items: ['Cake', 'Quality Shemiz', 'Kebeto', 'Quality Shito', 'Quality Seat', 'Post', 'Ruchit', 'Delivery'], image: 'https://placehold.co/600x400/f0fdf4/059669?text=Mens+Pkg+7' },
+
+            // Kids Packages
+            { id: 40, category: 'kids', categoryName: 'ለህጻናት', title: 'ህጻናት Package 1', price: '3,000 ብር', items: ['Cake', 'Kofiya', 'Richit', 'Shama Kutir', 'Delivery'], image: 'https://placehold.co/600x400/eff6ff/2563eb?text=Kids+Pkg+1' },
+            { id: 41, category: 'kids', categoryName: 'ለህጻናት', title: 'ህጻናት Package 2', price: '3,600 ብር', items: ['Cake', 'Kofiya', 'Ashangulit tinishu', 'snow spray', 'Richit', 'Shama Kutir', 'Delivery'], image: 'https://placehold.co/600x400/eff6ff/2563eb?text=Kids+Pkg+2' },
+            { id: 42, category: 'kids', categoryName: 'ለህጻናት', title: 'ህጻናት Package 3', price: '4,600 ብር', items: ['Cake', 'Kofiya', 'snow spray', 'Richit', 'Shama Kutir', 'Maliya', 'Kuas', 'Delivery'], image: 'https://placehold.co/600x400/eff6ff/2563eb?text=Kids+Pkg+3' },
+            { id: 43, category: 'kids', categoryName: 'ለህጻናት', title: 'ህጻናት Package 4', price: '3,800 ብር', items: ['Cake', 'Kofiya', 'snow spray', 'Richit', 'Shama Kutir', 'Maliya', 'Delivery'], image: 'https://placehold.co/600x400/eff6ff/2563eb?text=Kids+Pkg+4' },
+
+            // Fathers Packages
+            { id: 50, category: 'fathers', categoryName: 'ለአባቶች', title: 'አባቶች Package 1', price: '2,500 ብር', items: ['Cake', 'Richit', 'Post', 'Delivery'], image: 'https://placehold.co/600x400/f8fafc/475569?text=Fathers+Pkg+1' },
+            { id: 51, category: 'fathers', categoryName: 'ለአባቶች', title: 'አባቶች Package 2', price: '3,000 ብር', items: ['Cake', 'Flower', 'Richit', 'Post', 'Delivery'], image: 'https://placehold.co/600x400/f8fafc/475569?text=Fathers+Pkg+2' },
+            { id: 52, category: 'fathers', categoryName: 'ለአባቶች', title: 'አባቶች Package 3', price: '6,000 ብር', items: ['Cake', 'ኮፍያ(ባርኔጣ)', 'ሰዓት', 'Richit', 'Post', 'Delivery'], image: 'https://placehold.co/600x400/f8fafc/475569?text=Fathers+Pkg+3' },
+            { id: 53, category: 'fathers', categoryName: 'ለአባቶች', title: 'አባቶች Package 4', price: '7,000 ብር', items: ['Cake', 'Flower', 'ጋቢ', 'Richit', 'Post', 'Delivery'], image: 'https://placehold.co/600x400/f8fafc/475569?text=Fathers+Pkg+4' },
+            { id: 54, category: 'fathers', categoryName: 'ለአባቶች', title: 'አባቶች Package 5', price: '6,000 ብር', items: ['Cake', 'Flower', 'የእጅ ሰዓት', 'Richit', 'Post', 'Delivery'], image: 'https://placehold.co/600x400/f8fafc/475569?text=Fathers+Pkg+5' },
+
+            // Mothers Packages
+            { id: 60, category: 'mothers', categoryName: 'ለእናቶች', title: 'እናቶች Package 1', price: '2,500 ብር', items: ['Cake', 'snow spray', 'Post card', 'Richit', 'Delivery'], image: 'https://placehold.co/600x400/fff1f2/e11d48?text=Mothers+Pkg+1' },
+            { id: 61, category: 'mothers', categoryName: 'ለእናቶች', title: 'እናቶች Package 2', price: '3,000 ብር', items: ['Cake', 'Flower', 'Post card', 'Richit'], image: 'https://placehold.co/600x400/fff1f2/e11d48?text=Mothers+Pkg+2' },
+            { id: 62, category: 'mothers', categoryName: 'ለእናቶች', title: 'እናቶች Package 3', price: '3,900 ብር', items: ['ነጠላ', 'ስእል አድኖ', 'መስቀል', 'Cake', 'Delivery'], image: 'https://placehold.co/600x400/fff1f2/e11d48?text=Mothers+Pkg+3' },
+            { id: 63, category: 'mothers', categoryName: 'ለእናቶች', title: 'እናቶች Package 4', price: '10,000 ብር', items: ['ሽፎን', 'ቦርሳ', 'ሽቶ', 'Cake', 'Flower'], image: 'https://placehold.co/600x400/fff1f2/e11d48?text=Mothers+Pkg+4' }
+        ];
+
+        function renderPackages(filter = 'all') {
+            const grid = document.getElementById('packages-grid');
+            grid.innerHTML = '';
+            
+            const filtered = filter === 'all' 
+                ? packagesData 
+                : packagesData.filter(p => p.category === filter);
+
+            filtered.forEach((pkg, index) => {
+                const card = document.createElement('div');
+                // Added staggered fade-up animation via inline style delay
+                card.className = 'bg-white rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 overflow-hidden flex flex-col justify-between group opacity-0 animate-fade-up';
+                card.style.animationDelay = `${index * 0.04}s`;
+                
+                let itemsListHtml = pkg.items.map(item => `<li class="flex items-center space-x-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0"></span><span class="truncate">${item}</span></li>`).join('');
+
+                card.innerHTML = `
+                    <div>
+                        <div class="p-4 pb-2.5 text-center bg-gradient-to-b from-emerald-50/70 to-transparent">
+                            <h4 class="text-sm sm:text-base font-bold text-slate-900 ethiopic truncate">${pkg.title}</h4>
+                            <span class="text-base sm:text-lg font-extrabold text-emerald-600 mt-0.5 inline-block">${pkg.price}</span>
+                        </div>
+                        <div class="relative overflow-hidden aspect-video bg-slate-100">
+                            <img src="${pkg.image}" alt="${pkg.title}" class="w-full h-full object-cover group-hover:scale-110 transition duration-700 ease-out" onerror="this.src='https://placehold.co/600x400/e2e8f0/64748b?text=Gift+Package'">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <div class="p-4 sm:p-5">
+                            <ul class="text-xs sm:text-sm text-slate-600 space-y-2 ethiopic">
+                                ${itemsListHtml}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-4 sm:p-5 pt-0">
+                        <button onclick="openBooking(${pkg.id})" class="w-full py-3 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-semibold text-xs sm:text-sm shadow-md shadow-emerald-500/20 hover:shadow-lg hover:shadow-emerald-500/35 hover:opacity-95 active:scale-[0.98] transition-all duration-300 ethiopic text-center flex items-center justify-center gap-2">
+                            <span>ይህንን የመረጥኩት</span> 🎁
+                        </button>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        function filterCategory(category) {
+            document.querySelectorAll('.cat-btn').forEach(btn => {
+                btn.classList.remove('bg-emerald-600', 'text-white', 'shadow-lg', 'shadow-emerald-600/25', 'hover:-translate-y-0.5');
+                btn.classList.add('bg-white', 'text-slate-600', 'border', 'border-slate-200/80');
+            });
+            event.currentTarget.classList.remove('bg-white', 'text-slate-600', 'border', 'border-slate-200/80');
+            event.currentTarget.classList.add('bg-emerald-600', 'text-white', 'shadow-lg', 'shadow-emerald-600/25', 'hover:-translate-y-0.5');
+            
+            renderPackages(category);
+        }
+
+        function openBooking(id) {
+            const pkg = packagesData.find(p => p.id === id);
+            if(!pkg) return;
+
+            document.getElementById('selected-package-id').value = pkg.id;
+            document.getElementById('modal-category').innerText = pkg.categoryName;
+            document.getElementById('modal-title').innerText = pkg.title;
+            document.getElementById('modal-price').innerText = pkg.price;
+            
+            const modal = document.getElementById('booking-modal');
+            modal.classList.remove('hidden');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('booking-modal');
+            modal.classList.add('hidden');
+        }
+
+        // Close modal when clicking outside content area
+        document.getElementById('booking-modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        function submitBooking(e) {
+            e.preventDefault();
+            
+            const pkgId = document.getElementById('selected-package-id').value;
+            const pkg = packagesData.find(p => p.id == pkgId);
+            
+            const name = document.getElementById('cust-name').value;
+            const phone = document.getElementById('cust-phone').value;
+            const address = document.getElementById('cust-address').value;
+            const date = document.getElementById('cust-date').value;
+            const note = document.getElementById('cust-note').value || 'የሌለ';
+
+            const text = `🎁 አዲስ የስጦታ ትዕዛዝ (ፈለገ Gift Package)\n\n` +
+                         `📦 ፓኬጅ: ${pkg ? pkg.title : 'ስጦታ'} (${pkg ? pkg.price : ''})\n` +
+                         `📂 ምድብ: ${pkg ? pkg.categoryName : ''}\n\n` +
+                         `👤 ስም: ${name}\n` +
+                         `📞 ስልክ: ${phone}\n` +
+                         `📍 አድራሻ: ${address}\n` +
+                         `📅 የማድረሻ ቀን: ${date}\n` +
+                         `💌 የካርድ መልእክት: ${note}`;
+
+            const encodedText = encodeURIComponent(text);
+            const telegramUrl = `https://t.me/felegeh07?text=${encodedText}`;
+
+            closeModal();
+            window.open(telegramUrl, '_blank');
+        }
+
+        window.onload = function() {
+            renderPackages('all');
+        };
+    </script>
+</body>
+</html>
